@@ -1,0 +1,223 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E3CEF7;
+}
+
+.order-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.order-container form div {
+    margin-bottom: 15px;
+}
+
+.order-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.order-container select,
+.order-container input[type="text"],
+.order-container input[type="date"],
+.order-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.order-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-container button:hover {
+    background-color: #0056b3;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-container .button-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.product-container .button-group button {
+    margin-left: 10px;
+}
+
+.order-page {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E3CEF7;
+}
+
+.order-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.order-container form div {
+    margin-bottom: 15px;
+}
+
+.order-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.order-container select,
+.order-container input[type="text"],
+.order-container input[type="date"],
+.order-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.order-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-container button:hover {
+    background-color: #0056b3;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-container .button-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.product-container .button-group button {
+    margin-left: 10px;
+}
+
+.order-page {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .product-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-container label {
+        flex: 1;
+    }
+
+    .product-container select, 
+    .product-container input {
+        flex: 2;
+        margin-right: 10px;
+    }
+
+    .product-container .button-group {
+        flex: 1;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .product-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-container label {
+        width: 100%;
+    }
+
+    .product-container select, 
+    .product-container input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .product-container .button-group {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+}
